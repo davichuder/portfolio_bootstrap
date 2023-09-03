@@ -1,0 +1,10 @@
+body {
+    padding-top: 6.5rem;
+}
+
+@media (min-width: 576px) {
+    body {
+        margin-bottom: 2rem;
+        padding-bottom: 0.5rem;
+    }
+}

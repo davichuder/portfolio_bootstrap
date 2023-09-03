@@ -1,0 +1,11 @@
+@media (min-width: 576px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.footer-social-logo:hover {
+    transform: scale(1.15);
+}

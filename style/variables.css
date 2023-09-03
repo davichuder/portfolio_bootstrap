@@ -1,0 +1,5 @@
+:root {
+    --logo-light: url("../img/logo_light.svg");
+    --logo-dark: url("../img/logo_dark.svg");
+    --shadow-next-button-hover: teal;
+};
