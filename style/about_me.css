@@ -1,0 +1,16 @@
+.about-me {
+  min-height: var(--body-height);
+  padding: 0 10rem;
+}
+
+@media (max-width: 991.98px) {
+  .about-me {
+    padding: 0rem 5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-me {
+    padding: 0rem 2rem;
+  }
+}

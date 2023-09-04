@@ -1,8 +1,8 @@
 .img-brand {
-    width: 3rem;
+    height: 3rem;
 }
 
-.navbar > .container-fluid > .container-fluid {
+.navbar>.container-fluid>.container-fluid {
     width: fit-content;
 }
 
@@ -18,4 +18,12 @@
 
 .icon-logo-dark {
     content: var(--logo-dark);
+}
+
+.current-page:before {
+    content: "«";
+}
+
+.current-page:after {
+    content: "»";
 }

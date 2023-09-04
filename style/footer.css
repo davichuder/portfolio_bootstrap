@@ -9,3 +9,11 @@
 .footer-social-logo:hover {
     transform: scale(1.15);
 }
+
+.footer-social-logo {
+    height: 1.5rem;
+}
+
+.footer-social-logo > a {
+    height: inherit;
+}

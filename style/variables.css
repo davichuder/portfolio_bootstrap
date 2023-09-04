@@ -2,4 +2,13 @@
     --logo-light: url("../img/logo_light.svg");
     --logo-dark: url("../img/logo_dark.svg");
     --shadow-next-button-hover: teal;
+    --nav-height: 4rem;
+    --footer-height: 2.5rem;
+    --body-height: calc(100vh - var(--nav-height) - var(--footer-height));
+    --timeline-badge-text-dark: #2B3035;
+    --timeline-badge-bg-dark: #fff;
+    --timeline-badge-text-light: #fff;
+    --timeline-badge-bg-light: #6d8faf;
+    --card-hover: #ab98ab;
+    --cookie-bottom: calc(var(--footer-height) + 0.5rem);
 };
