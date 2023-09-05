@@ -11,4 +11,22 @@
     --timeline-badge-bg-light: #6d8faf;
     --card-hover: #ab98ab;
     --cookie-bottom: calc(var(--footer-height) + 0.5rem);
-};
+    --timeline-dark: #fff;
+    --timeline-point-dark: #fff;
+    --timeline-date-dark: #fff;
+    --timeline-card-bg-dark: #9b9b9b;
+    --timeline-title-dark: #212529;
+    --timeline-subtitle-dark: #212529;
+    --timeline-badge-text-dark: #fff;
+    --timeline-badge-bg-dark: #2B3035;
+    --timeline-light: #212529;
+    --timeline-point-light: #212529;
+    --timeline-date-light: #212529;
+    --timeline-card-bg-light: #9b9b9b;
+    --timeline-title-light: #212529;
+    --timeline-subtitle-light: #212529;
+    --timeline-badge-text-light: #212529;
+    --timeline-badge-bg-light: #fff;
+}
+
+;

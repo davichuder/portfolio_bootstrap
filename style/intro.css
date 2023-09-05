@@ -1,3 +1,8 @@
 .intro {
     min-height: var(--body-height)
 }
+
+.img-portrait {
+    height: 15rem;
+    aspect-ratio: 1;
+}

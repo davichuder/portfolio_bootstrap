@@ -75,8 +75,7 @@
   <main>
     <section class="intro d-flex flex-column justify-content-evenly text-center align-items-center px-5">
       <h2 class="display-4 text-uppercase">!Bienvenido!</h2>
-      <img src="img/cv.jpg" alt="Foto de David Rolón" class="img-fluid rounded-circle my-3 border border-5"
-        style="width: 12rem; height: 12rem;">
+      <img src="img/cv.jpg" alt="Foto de David Rolón" class="rounded-circle my-3 border border-5 img-portrait">
       <h3 class="display-5">Me llamo David Rolón</h2>
         <p>En este portfolio podrás conocer más sobre mí, mi trayectoria profesional y mis habilidades.</p>
         <p>Vas a poder conocer algunos de los proyectos que he realizado, donde aplico mis habilidades y conocimientos
@@ -92,14 +91,14 @@
       </div>
     </section>
 
-    <section class="cookie d-flex align-items-center" id="cookie-policy">>
-      <div class="cookie-txt text-primary">
-        <p>Para navegar en este sitio,<br>
-          debe aceptar la <a href="/cookies-policy">Política de Privacidad.</a>
+    <section class="cookie d-flex align-items-center" id="cookie-policy">
+      <div class="cookie-txt">
+        <p class="my-0">Para navegar en este sitio, debe aceptar la <a href="/cookies-policy">Política de
+            Privacidad.</a>
         </p>
       </div>
       <div class="cookie-container">
-        <a class="btn accept text-danger" onclick="hideCookie();">Aceptar</a>
+        <a class="btn accept" onclick="hideCookie();">Aceptar</a>
       </div>
     </section>
   </main>
@@ -178,6 +177,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    verifyCookiePolicyCookie();
+    verifyThemeCookie();
+  </script>
 </body>
 
 </html>
