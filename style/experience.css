@@ -1,11 +1,12 @@
 .experiences {
-  padding: 2rem 10rem;
+  margin: 2rem 8rem;
 }
 
 .experiences-timeline {
   position: relative;
 }
 
+/* Eje vertical */
 .experiences-timeline:before {
   content: "";
   display: block;
@@ -14,22 +15,19 @@
   background: #c6c6c6;
   margin: 0 auto;
   position: absolute;
-  /* top: 0; */
+  top: 0;
   left: 0;
   right: 0;
 }
 
+/* Separacion entre cards */
 .experiences-timeline .experience {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   position: relative;
+  align-items: center;
 }
 
-.experiences-timeline .experience:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
+/* Circulo chico base */
 .experiences-timeline .icon {
   width: 1.125rem;
   height: 1.125rem;
@@ -42,6 +40,7 @@
   right: 0;
 }
 
+/* Circulo chico decorados base*/
 .experiences-timeline .icon:before,
 .experiences-timeline .icon:after {
   content: "";
@@ -54,209 +53,140 @@
   transition: all 0.33s ease-out 0s;
 }
 
-/* .experiences-timeline .icon:before {
+/* Circulo chico decorado izquierdo*/
+.experiences-timeline .icon:before {
   background: #fff;
-  border: 2px solid #232323;
-  left: -3px;
-} */
+  border: 0.125rem solid #232323;
+  left: -0.1875rem;
+}
 
-/* .experiences-timeline .icon:after {
-  border: 2px solid #c6c6c6;
-  left: 3px;
-} */
+/* Circulo chico decorado derecho*/
+.experiences-timeline .icon:after {
+  border: 0.125rem solid #c6c6c6;
+  left: 0.1875rem;
+}
 
-/* .experiences-timeline .experience:hover .icon:before {
-  left: 3px;
-} */
+/* Circulo chico decorado izquierdo animacion*/
+.experiences-timeline .experience:hover .icon:before {
+  left: 0.1875rem;
+}
 
-/* .experiences-timeline .experience:hover .icon:after {
-  left: -3px;
-} */
+/* Circulo chico decorado derecho animacion*/
+.experiences-timeline .experience:hover .icon:after {
+  left: -0.1875rem;
+}
 
-/* .experiences-timeline .date-content {
+.experience:hover .date-content {
+  transform: scale(1.02);
+}
+
+.experience .date-content {
+  display: flex;
   width: 50%;
-  float: left;
-  margin-top: 22px;
-  position: relative;
-} */
+  padding: 1rem 1rem;
+  margin: 0rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
 
-/* .experiences-timeline .date-content:before {
+.experience .timeline-content {
+  width: 50%;
+  padding: 1rem 1rem;
+  margin: 0rem 1rem;
+  border-radius: 2rem;
+  border: 0.2rem solid #c6c6c6;
+}
+
+
+.experiences-timeline .experience:nth-child(2n+1) {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1rem;
+}
+
+.experiences-timeline .experience:nth-child(2n) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Separacion entre flotantes */
+.experiences-timeline .experience:after {
   content: "";
-  width: 36.5%;
-  height: 2px;
-  background: #c6c6c6;
-  margin: auto 0;
-  position: absolute;
-  top: 0;
-  right: 10px;
-  bottom: 0;
-} */
+  display: block;
+  clear: both;
+}
 
-/* .experiences-timeline .date-outer {
-  width: 125px;
-  height: 125px;
-  font-size: 16px;
+.experience .date-outer .date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience .title {
   text-align: center;
-  margin: auto;
-  z-index: 1;
-} */
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
 
-/* .experiences-timeline .date-outer:before,
-.experiences-timeline .date-outer:after {
+.experience .subtitle {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+.experience .start {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.experience .end {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--bs-body-color);
+  line-height: 2rem;
+}
+
+.experience .date-outer {
+  display: flex;
+  width: 10rem;
+  background: var(--bs-secondary-bg);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience .date-outer:before,
+.experience .date-outer:after {
   content: "";
-  width: 150px;
-  height: 150px;
+  height: 10rem;
+  aspect-ratio: 1;
   margin: 0 auto;
   border-radius: 50%;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   transition: all 0.33s ease-out 0s;
-} */
+}
 
-/* .experiences-timeline .date-outer:before {
-  background: #fff;
-  border: 2px solid #232323;
-  left: -6px;
-} */
+.experience .date-outer:before {
+  border: 0.125rem solid teal;
+  transform: translate(0.35rem);
+}
 
-/* .experiences-timeline .date-outer:after {
-  border: 2px solid #c6c6c6;
-  left: 6px;
-} */
+.experience .date-outer:after {
+  border: 0.125rem solid #c6c6c6;
+}
 
-/* .experiences-timeline .experience:hover .date-outer:before {
-  left: 6px;
-} */
+.experience:hover .date-outer:before {
+  transform: translate(-0.35rem);
+}
 
-/* .experiences-timeline .experience:hover .date-outer:after {
-  left: -6px;
-} */
+.experience:hover .date-outer:after {
+  transform: translate(0.35rem);
+}
 
-/* .experiences-timeline .date {
-  width: 100%;
-  margin: auto;
-  position: absolute;
-  top: 40%;
-  left: 0;
-} */
-
-/* .experiences-timeline .start {
-  font-size: 18px;
-  font-weight: 700;
-} */
-
-/* .experiences-timeline .end {
-  display: block;
-  font-size: 27px;
-  font-weight: 700;
-  color: var(--bs-body-color);
-  line-height: 36px;
-} */
-
-/* .experiences-timeline .experience-content {
-  width: 50%;
-  padding: 20px 0 20px 50px;
-  float: right;
-} */
-
-/* .experiences-timeline .title {
-  font-weight: 700;
-  line-height: 24px;
-  margin: 0 0 15px 0;
-} */
-
-/* .experiences-timeline .description {
-  margin-bottom: 0;
-} */
-
-/* .experiences-timeline .experience:nth-child(2n) .date-content {
-  float: right;
-} */
-
-/* .experiences-timeline .experience:nth-child(2n) .date-content:before {
-  left: 10px;
-} */
-
-/* .experiences-timeline .experience:nth-child(2n) .experience-content {
-  padding: 20px 50px 20px 0;
-  text-align: left;
-} */
-
-/* @media only screen and (max-width: 991px) {
-  .experiences-timeline .date-content {
-    margin-top: 35px;
+@media (max-width: 991.98px) {
+  .experiences {
+    margin: 2rem 2rem;
   }
-
-  .experiences-timeline .date-content:before {
-    width: 22.5%;
-  }
-
-  .experiences-timeline .experience-content {
-    padding: 10px 0 10px 30px;
-  }
-
-  .experiences-timeline .experience:nth-child(2n) .experience-content {
-    padding: 10px 30px 10px 0;
-  }
-} */
-
-/* @media only screen and (max-width: 767px) {
-  .experiences-timeline:before {
-    margin: 0;
-    left: 7px;
-  }
-
-  .experiences-timeline .experience {
-    margin-bottom: 20px;
-  }
-
-  .experiences-timeline .experience:last-child {
-    margin-bottom: 0;
-  }
-
-  .experiences-timeline .icon {
-    margin: auto 0;
-  }
-
-  .experiences-timeline .date-content {
-    width: 95%;
-    float: right;
-    margin-top: 0;
-  }
-
-  .experiences-timeline .date-content:before {
-    display: none;
-  }
-
-  .experiences-timeline .date-outer {
-    width: 110px;
-    height: 110px;
-  }
-
-  .experiences-timeline .date-outer:before,
-  .experiences-timeline .date-outer:after {
-    width: 120px;
-    height: 120px;
-  }
-
-  .experiences-timeline .date {
-    top: 30%;
-  }
-
-  .experiences-timeline .end {
-    font-size: 24px;
-  }
-
-  .experiences-timeline .experience-content,
-  .experiences-timeline .experience:nth-child(2n) .experience-content {
-    width: 95%;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .experiences-timeline .title {
-    margin-bottom: 10px;
-  }
-} */
+}
