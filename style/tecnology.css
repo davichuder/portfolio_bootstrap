@@ -25,6 +25,14 @@
 .tecnology .card {
   transition: all 0.3s;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.tecnology .card-body {
+  display: block;
+  flex: none;
+  padding: 0;
 }
 
 .tecnology .card:hover {
@@ -33,7 +41,7 @@
 }
 
 .img-card-size {
-  height: 3rem;
+  max-height: 30%;
   object-fit: contain;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
