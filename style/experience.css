@@ -185,8 +185,38 @@
   transform: translate(0.35rem);
 }
 
+.experience:nth-child(2n + 1) .timeline-content:before {
+  content: "";
+  background: linear-gradient(to right, teal, #c6c6c6);
+  width: 25%;
+  height: 0.125rem;
+  position: absolute;
+  right: 50%;
+  top: calc(50% - 0.125rem / 2);
+  z-index: -1;
+  transition: all 0.33s ease-out 0s;
+}
+
+.experience:nth-child(2n) .timeline-content:after {
+  content: "";
+  background: linear-gradient(to left, teal, #c6c6c6);
+  width: 25%;
+  height: 0.125rem;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 0.125rem / 2);
+  z-index: -1;
+  transition: all 0.33s ease-out 0s;
+}
+
 @media (max-width: 991.98px) {
   .experiences {
     margin: 2rem 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .experiences {
+    margin: 1rem 1rem;
   }
 }
