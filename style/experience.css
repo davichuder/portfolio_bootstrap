@@ -1,5 +1,5 @@
 .experiences {
-  margin: 2rem 8rem;
+  margin: 2rem 10rem;
 }
 
 .experiences-timeline {
@@ -227,7 +227,7 @@
 
   .experiences-timeline .icon {
     right: auto;
-    left: 0%;
+    left: -2.375rem;
   }
 
   .experience:nth-child(2n + 1) .timeline-content:before {
@@ -242,6 +242,11 @@
   .experiences-timeline .experience:nth-child(2n + 1) {
     display: flex;
     flex-direction: column;
+    box-sizing: content-box;
+    padding: 0 0 0 0;
+    margin: 0 0 1rem 2rem;
+    border: 0.2rem solid #c6c6c6;
+    border-radius: 2rem;
   }
 
   .experience .date-content {
@@ -250,5 +255,6 @@
 
   .experience .timeline-content {
     width: 100%;
+    border: none;
   }
 }

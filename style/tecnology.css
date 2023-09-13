@@ -18,7 +18,7 @@
 
 @media (max-width: 575.98px) {
   .tecnology {
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
   }
 }
 
@@ -56,8 +56,4 @@
 
 [data-bs-theme="light"] .tecnology .card {
   border: 1px solid rgb(33, 37, 41);
-}
-
-.tecnology .row-cols-4 > .col:last-child {
-  padding-bottom: 2rem;
 }
