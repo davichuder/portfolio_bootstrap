@@ -9,8 +9,10 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script type="text/javascript" src="js/cookie.js"></script>
   <script type="text/javascript" src="js/switch_mode.js"></script>
+  <script type="text/javascript" src="js/tabs_curriculum.js"></script>
   <title>David Rolón</title>
   <link rel="shortcut icon" href="img/logo_light.svg">
 </head>
@@ -22,7 +24,7 @@
         <div class="container-fluid ms-0">
           <a class="navbar-brand" href="/">
             <img class="img-brand" src="img/logo_light.svg" alt="Logo">
-            <span class="current-page">David Rolón</span>
+            David Rolón
           </a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -47,7 +49,8 @@
               <a class="nav-link active" aria-current="page" href="/experiencias.html">Experiencias</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/curriculum.html">Curriculum</a>
+              <a class="nav-link active current-page" aria-current="page" href="/curriculum.html"
+                target="_blank">Curriculum</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/contacto.html">Contacto</a>
@@ -74,21 +77,47 @@
   </header>
 
   <main>
-    <section class="intro d-flex flex-column justify-content-evenly text-center align-items-center px-5">
-      <h2 class="display-4 text-uppercase">!Bienvenido!</h2>
-      <img src="img/cv.jpg" alt="Foto de David Rolón" class="rounded-circle my-3 border border-5 img-portrait">
-      <h3 class="display-5">Me llamo David Rolón</h2>
-        <p>En este portfolio podrás conocer más sobre mí, mi trayectoria profesional y mis habilidades.</p>
-        <p>Vas a poder conocer algunos de los proyectos que he realizado, donde aplico mis habilidades y conocimientos
-          en diferentes áreas y tecnologías.</p>
-        <p>Desde la creación de páginas web dinámicas, interactivas y atractivas, hasta la
-          extracción de información valiosa de grandes volúmenes de datos.</p>
-        <p>Espero que disfrutes navegando por mi portfolio y que esta plataforma te permita conocerme mejor.</p>
+    <section class="curriculum">
+      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+            type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+          tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, consequuntur. Provident vel
+          facilis
+          molestiae accusantium debitis fuga incidunt architecto, hic earum ratione ipsa laborum rem totam sequi,
+          asperiores cumque repudiandae? 0
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tenetur quibusdam voluptatem provident illum
+          inventore fuga alias aliquid eum ratione esse, harum, est non temporibus soluta dolorem error consequatur ad!
+          1
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur deserunt exercitationem quas? Magni
+          dignissimos architecto praesentium quasi a similique, eligendi assumenda harum laudantium aperiam odit quidem
+          corporis quod iure! 2
+        </div>
+      </div>
     </section>
 
     <section class="previus_next_buttons text-center justify-content-evenly">
+      <div class="previous_button ms-3 px-3 py-2 rounded-pill bg-body-tertiary border border-3">
+        <a class="btn" href="/experiencias.html">Anterior</a>
+      </div>
       <div class="next_button me-3 px-3 py-2 rounded-pill bg-body-tertiary border border-3">
-        <a class="btn" href="/sobre_mi.html">Siguiente</a>
+        <a class="btn" href="/contacto.html">Siguiente</a>
       </div>
     </section>
 
