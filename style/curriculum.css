@@ -1,10 +1,9 @@
 .curriculum {
-    min-height: var(--body-height);
     padding: 2rem 10rem 1rem 10rem;
 }
 
 .curriculum .tab-pane {
-    min-height: calc(var(--body-height) - 6rem);
+    min-height: var(--body-height-sm);
     padding-top: 1rem;
     position: relative;
 }
@@ -29,12 +28,12 @@
 
 @media (max-width: 991.98px) {
     .curriculum {
-        padding: 2rem 2rem 0rem 2rem;
+        padding: 2rem 2rem 1cm 2rem;
     }
 }
 
 @media (max-width: 767.98px) {
     .curriculum {
-        padding: 1rem 1rem 0rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
     }
 }

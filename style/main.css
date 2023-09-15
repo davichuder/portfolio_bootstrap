@@ -1,5 +1,8 @@
 main {
-    min-height: var(--body-height)
+    min-height: var(--body-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .previous_button {
@@ -31,5 +34,15 @@ main {
     .previous_button,
     .next_button {
         position: static;
+    }
+
+    .main {
+        min-height: var(--body-height-lg);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .main {
+        min-height: var(--body-height-sm);
     }
 }

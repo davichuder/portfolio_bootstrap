@@ -5,6 +5,10 @@
     --nav-height: 4rem;
     --footer-height: 2.5rem;
     --body-height: calc(100vh - var(--nav-height) - var(--footer-height));
+    --footer-height-sm: 4rem;
+    --botton-lg-height: 3.75rem;
+    --body-height-lg: calc(100vh - var(--nav-height) - var(--botton-lg-height));
+    --body-height-sm: calc(100vh - var(--nav-height) - var(--footer-height-sm) - var(--botton-lg-height));
     --timeline-badge-text-dark: #2B3035;
     --timeline-badge-bg-dark: #fff;
     --timeline-badge-text-light: #fff;

@@ -1,11 +1,18 @@
 .about-me {
-  min-height: var(--body-height);
   padding: 0 10rem;
 }
 
 @media (max-width: 991.98px) {
   .about-me {
     padding: 0rem 5rem;
+  }
+
+  .about-me:before {
+    content: "Sobre mi";
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-weight: bolder;
+    padding-bottom: 1rem;
   }
 }
 
