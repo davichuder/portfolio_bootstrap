@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  flex-direction: column;
 }
 
 .contacto .panel {
@@ -31,6 +32,12 @@
 
 .contacto .panel .btn.disabled {
   border: 0.0625rem solid #c6c6c6;
+}
+
+.contacto .title {
+  text-decoration: underline;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 1199.98px) {
