@@ -63,10 +63,10 @@
 }
 
 [data-bs-theme="dark"] .tecnology .card {
-  border: 1px solid #fff;
+  border: 0.0625rem solid #fff;
   background-color: var(--bs-secondary-bg);
 }
 
 [data-bs-theme="light"] .tecnology .card {
-  border: 1px solid rgb(33, 37, 41);
+  border: 0.0625rem solid var(--card-tecnology-border-light);
 }

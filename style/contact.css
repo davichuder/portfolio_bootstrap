@@ -9,7 +9,7 @@
 .contacto .panel {
   width: 80%;
   border-radius: 2rem;
-  border: 0.125rem solid #c6c6c6;
+  border: 0.125rem solid var(--contacto-border);
   padding: 2rem 2rem 4rem 2rem;
   position: relative;
   margin-bottom: 1rem;
@@ -26,12 +26,12 @@
   position: absolute;
   left: 25%;
   bottom: 1rem;
-  border: 0.125rem solid #c6c6c6;
+  border: 0.125rem solid var(--contacto-border);
   background: var(--bs-secondary-bg);
 }
 
 .contacto .panel .btn.disabled {
-  border: 0.0625rem solid #c6c6c6;
+  border: 0.0625rem solid var(--contacto-border);
 }
 
 .contacto .title {
@@ -55,6 +55,5 @@
 @media (max-width: 767.98px) {
   .contacto {
     padding: 1rem 1rem 1rem 1rem;
-    /* max-height: var(--body-height-sm); */
   }
 }

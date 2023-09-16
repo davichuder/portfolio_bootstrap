@@ -31,6 +31,8 @@
     --timeline-subtitle-light: #212529;
     --timeline-badge-text-light: #212529;
     --timeline-badge-bg-light: #fff;
-}
-
-;
+    --card-tecnology-border-light: rgb(33, 37, 41);
+    --education-card-hover: #918991;
+    --experiencias-border: #c6c6c6;
+    --contacto-border: #c6c6c6;
+};
